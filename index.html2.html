@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>// Função para alternar o menu responsivo
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+        
+        // Função para o Slider (Carrossel de Notícias)
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        function showSlides() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            const slideContainer = document.querySelector(".slides");
+            slideContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+        
+        setInterval(showSlides, 5000); // Trocar de slide a cada 5 segundos
+         </script>
+    <title>TDS News</title>
+    <link rel="stylesheet" href="style.css2.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="png" alt="Logo do Jornal">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Entretenimento</a></li>
+                <li><a href="#">Opinião</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
+</head>
+<body>
+    <h1>Papel da Imprensa na Exposição do Nazismo Alemão</h1>
+
+<p>Desde a ascensão de Adolf Hitler ao poder em 1933 até a queda do regime nazista em 1945, a imprensa desempenhou um papel crucial na documentação e exposição das atrocidades cometidas pelo Terceiro Reich. Embora o regime tenha exercido um controle estrito sobre a mídia dentro da Alemanha, censurando e utilizando-a como ferramenta de propaganda, diversos jornais e jornalistas, tanto dentro quanto fora do país, arriscaram suas vidas para revelar a verdade sobre o que estava acontecendo.</p>
+
+<p><em>A Censura e o Controle da Mídia na Alemanha Nazista</em></p>
+
+Ao assumir o poder, Hitler rapidamente instituiu um aparato de censura e controle da imprensa. Joseph Goebbels, nomeado Ministro da Propaganda, implementou uma estratégia rigorosa para alinhar os jornais, rádios e outros meios de comunicação aos interesses do regime. Em 1933, a Lei da Imprensa do Reich impediu a existência de jornais independentes, garantindo que apenas publicações alinhadas ao Partido Nazista pudessem operar.
+
+Publicações opositoras foram fechadas, jornalistas judeus e críticos do regime foram perseguidos, presos e, em muitos casos, mortos. A imprensa foi usada como uma ferramenta para espalhar o antissemitismo, glorificar o regime e justificar a perseguição de minorias.
+
+<p>A Resistência Jornalística Dentro da Alemanha</p>
+
+Mesmo com a repressão severa, houve resistência dentro da própria Alemanha. Jornais clandestinos, como o "Münchener Post", alertaram sobre a violência dos nazistas já na década de 1920 e continuaram suas atividades até serem fechados. Outra iniciativa relevante foi o grupo estudantil Rosa Branca (Weiße Rose), que publicou panfletos denunciando os crimes nazistas e incentivando a resistência civil. Os integrantes do grupo foram capturados e executados em 1943.
+
+<p>A Imprensa Internacional e a Exposição do Nazismo</p>
+
+<p><em>Fora da Alemanha</em>, jornais e correspondentes estrangeiros tiveram um papel essencial na revelação das atrocidades nazistas. Algumas das principais contribuições incluem:</p>
+- William Shirer e o "Berlin Diary": Correspondente nos anos 1930, Shirer relatou a militarização da Alemanha e a crescente perseguição a judeus e opositores.
+- The New York Times e The Guardian: Esses jornais publicaram reportagens sobre as Leis de Nuremberg e os primeiros campos de concentração na Alemanha.
+- Edward R. Murrow: Jornalista da CBS que transmitiu relatos impactantes da guerra e das condições dentro da Alemanha.
+- Relatos sobre os campos de concentração: Em 1944, o jornal "The Washington Post" publicou reportagens baseadas em informações de sobreviventes sobre os campos de extermínio, como Auschwitz e Treblinka.
+
+<p>Apesar das evidências, muitos governos e setores da sociedade ocidental foram inicialmente céticos ou demoraram a reagir aos alertas da imprensa. Havia, entre outras razões, um desejo de evitar conflitos diplomáticos com a Alemanha antes da Segunda Guerra Mundial.</p>
+
+<p><em>O Papel do Jornalismo na Queda do Nazismo</em></p>
+
+<p>Com o avanço das tropas aliadas em 1944-1945, jornalistas passaram a documentar, em primeira mão, as evidências dos crimes nazistas. Correspondentes de guerra, como os do BBC, Life Magazine e The Times, entraram nos campos de concentração recém-libertados e registraram cenas de horror que chocaram o mundo. As imagens e relatos foram cruciais para a formação da opinião pública e para o julgamento dos criminosos nazistas no Tribunal de Nuremberg (1945-1946).</p>
+
+<p>Conclusão</p>
+
+A imprensa desempenhou um papel vital na exposição do nazismo, enfrentando censura, repressão e até mesmo a indiferença de alguns governos. Os jornalistas que arriscaram suas vidas para relatar a verdade ajudaram a documentar um dos períodos mais sombrios da história e a garantir que os horrores do nazismo jamais fossem esquecidos. Seu trabalho continua a servir como um lembrete do poder e da responsabilidade da mídia na defesa da democracia e dos direitos humanos.
+    <footer>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="newsletter">
+            <h3>Assine Nossa Página</h3>
+            <input type="email" placeholder="Seu email">
+            <button>Inscrever</button>
+        </div>
+    </footer>
+</body>
+</html>

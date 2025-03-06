@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>// Função para alternar o menu responsivo
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+        
+        // Função para o Slider (Carrossel de Notícias)
+        let slideIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+        function showSlides() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            const slideContainer = document.querySelector(".slides");
+            slideContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+        
+        setInterval(showSlides, 5000); // Trocar de slide a cada 5 segundos
+         </script>
+    <title>TDS News</title>
+    <link rel="stylesheet" href="style.css2.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="png" alt="Logo do Jornal">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Tecnologia</a></li>
+                <li><a href="#">Entretenimento</a></li>
+                <li><a href="#">Opinião</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Buscar...">
+        </div>
+    </header>
+</head>
+<body>
+    <h1>O Papel da Imprensa na Exposição da Ditadura Militar no Brasil</h1>
+
+<p>A ditadura militar no Brasil (1964-1985) foi um período marcado pela repressão política, censura e perseguição a opositores do regime. Nesse contexto, a imprensa teve um papel fundamental na denúncia das violações aos direitos humanos e na luta pela redemocratização. Apesar da forte censura imposta pelos militares, jornais, revistas e jornalistas corajosos desafiaram o regime, expondo abusos e informando a população sobre a realidade política do país.</p>
+
+<em>A Censura e o Controle da Mídia</em>
+
+<p>Com o golpe militar de 31 de março de 1964, a liberdade de imprensa foi severamente restringida. O regime impôs um sistema de censura que vigiava e reprimia publicações que criticassem o governo. A partir do Ato Institucional nº 5 (AI-5), promulgado em 1968, a censura se intensificou, atingindo não apenas jornais e revistas, mas também a televisão, rádio, teatro e música.</p>
+
+<p> Censores do regime vetavam matérias jornalísticas consideradas subversivas ou contrárias aos interesses do governo. Além disso, jornalistas e veículos que desafiavam a censura frequentemente sofriam represálias, incluindo prisões, torturas e, em alguns casos, assassinatos. O jornalista Vladimir Herzog, por exemplo, foi morto sob tortura em 1975 nas dependências do DOI-CODI, um dos órgãos de repressão do regime.</p>
+
+ <em>A Imprensa de Oposição e a Resistência Jornalística</em>
+
+<p>Apesar da repressão, diversos veículos de comunicação encontraram maneiras de driblar a censura e divulgar informações sobre os abusos cometidos pelo regime. Alguns dos principais exemplos incluem:</p>
+
+<P>- O Pasquim: Fundado em 1969, esse jornal satírico usava o humor e a ironia para criticar a ditadura. Seus jornalistas foram perseguidos e presos, mas o jornal continuou circulando, desafiando o regime.</P>
+    <P>- Opinião e Movimento: Esses jornais alternativos surgiram como resistência à censura, publicando denúncias sobre a repressão e a luta por direitos humanos.</P>
+        <P>- Jornal do Brasil: Encontrou formas criativas de driblar a censura, como deixar espaços em branco onde notícias proibidas seriam publicadas, alertando os leitores sobre a interferência do regime.</P>
+            <P>- Folha de S. Paulo: Publicou artigos críticos à ditadura, ainda que tenha enfrentado períodos de alinhamento com o governo.</P>
+                <P>- Correio da Manhã: Nos primeiros anos da ditadura, foi um dos poucos jornais de grande circulação a criticar abertamente o regime, até ser sufocado economicamente.</P>
+
+                <P>Além da imprensa alternativa, jornalistas exilados, como Paulo Freire e Fernando Gabeira, utilizaram meios internacionais para denunciar a ditadura. Correspondentes estrangeiros também desempenharam um papel importante na divulgação das violações dos direitos humanos no Brasil para o mundo.</P>
+
+                <em> A Imprensa e a Abertura Política</em>
+
+                <P>Na década de 1970, com o início do processo de abertura política promovido pelo governo Geisel, a imprensa passou a ter um papel ainda mais ativo na denúncia dos crimes da ditadura e na mobilização pela redemocratização. O assassinato de Vladimir Herzog foi um marco na luta por maior liberdade de imprensa, gerando grande comoção pública e pressionando o regime.</P>
+
+                <P>Com a ascensão dos movimentos pró-democracia na década de 1980, a imprensa foi essencial na cobertura das Diretas Já, campanha que exigia eleições diretas para presidente. Os jornais que antes tinham se alinhado ao regime passaram a apoiar as mudanças políticas, refletindo o desejo popular pelo fim da ditadura.</P>
+
+                    <em> Conclusão</em>
+
+<p>A imprensa teve um papel fundamental na exposição da ditadura militar no Brasil, mesmo diante da censura e da repressão. Veículos alternativos e jornalistas corajosos desafiaram o regime, denunciando abusos e contribuindo para a luta pela redemocratização. Seu trabalho foi crucial para informar a sociedade e preservar a memória das violações cometidas durante esse período sombrio da história brasileira. O legado dessa resistência jornalística continua a servir como um exemplo da importância da liberdade de imprensa na defesa da democracia e dos direitos humanos.</p>
+<footer>
+    <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+    <div class="newsletter">
+        <h3>Assine Nossa Página</h3>
+        <input type="email" placeholder="Seu email">
+        <button>Inscrever</button>
+    </div>
+</footer>
+</body>
+</html>
